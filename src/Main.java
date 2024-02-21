@@ -145,16 +145,14 @@ public class Main {
     }
     public static void p10(int n)
     {
-        int m=n;
+
         for(int i=1;i<2*n;i++)
         {
             for(int j=1;j<2*n;j++)
             {
-               int top=i;
-               int left=j;
-               int right=(2*n)-j;
+                int right=(2*n)-j;
                int bottom=(2*n)-i;
-               System.out.print(n+1-Math.min(Math.min(top,bottom),Math.min(left,right)));
+               System.out.print(n+1-Math.min(Math.min(i,bottom),Math.min(j,right)));
             }
             System.out.println();
         }
